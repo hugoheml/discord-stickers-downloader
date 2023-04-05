@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/hugoheml/discord-stickers-saver/issues"
   },
-  "homepage": "https://github.com/hugoheml/discord-stickers-saver#readme"
+  "homepage": "https://github.com/hugoheml/discord-stickers-saver#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
 }
