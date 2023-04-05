@@ -1,4 +1,8 @@
 {
     "outputFolder": "output/",
-    "botToken": "YOUR_DISCORD_BOT_TOKEN"
+    "botToken": "YOUR_DISCORD_BOT_TOKEN",
+    "informations": {
+        "packs": true,
+        "stickers": true
+    }
 }
