@@ -1,0 +1,16 @@
+{
+  "name": "discord-stickers-saver",
+  "version": "1.0.0",
+  "description": "A simple NodeJS script used for download and save all Discord default stickers",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoheml/discord-stickers-saver.git"
+  },
+  "author": "Hugo H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoheml/discord-stickers-saver/issues"
+  },
+  "homepage": "https://github.com/hugoheml/discord-stickers-saver#readme"
+}

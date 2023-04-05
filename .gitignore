@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Config
+config.json
+
+# Default output folders
+output/
