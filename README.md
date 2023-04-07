@@ -3,7 +3,7 @@ This is a small project, which allows you to **download all the Discord nitro st
 
 ## Warning
 I am aware that **it takes a long time to download**, but as Discord uses specific formats, I need to convert them to download them as a gif.
-Feel free to [contribute](#contributing-questions-and-problems) if you have any ideas for optimization!
+Feel free to [contribute](#contributions-questions-and-problems) if you have any ideas for optimization!
 
 ## Requirements
 - NodeJS
@@ -27,6 +27,7 @@ All settings are detailed here:
     - `packs` If you want to view packs download progression in your console
     - `stickers` If you want to view stickers download progression in your console
 
-## Contributing, questions and problems
+## Contributions, questions and problems
 If you have any questions or problems, you can do an issue.
+
 If you want to contribute to the script, you can create an issue or clone a project and create a pull request.
