@@ -3,6 +3,7 @@ This is a small project, which allows you to **download all the Discord nitro st
 
 ## Warning
 I am aware that **it takes a long time to download**, but as Discord uses specific formats, I need to convert them to download them as a gif.
+
 Feel free to [contribute](#contributions-questions-and-problems) if you have any ideas for optimization!
 
 ## Requirements
@@ -14,7 +15,7 @@ Feel free to [contribute](#contributions-questions-and-problems) if you have any
 - Install [Gifski CLI](https://github.com/sindresorhus/Gifski), used by [puppeteer-lottie](https://github.com/transitive-bullshit/puppeteer-lottie)
 - Download dependencies with `npm install` command in your terminal
 - Duplicate `config-example.json` as `config.json`
-- Configure the script (follow [Configuration](#configuration) thread for more details)
+- Configure the script (follow [Configuration](#configuration) section for more details)
 - Run the script with `node index.js` command
 
 ## Configuration
