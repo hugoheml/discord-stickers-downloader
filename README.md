@@ -25,8 +25,8 @@ All settings are detailed here:
 - `outputFolder`: The folder which your Discord Stickers will be download into (from the script folder)
 - `botToken`: The token of a Discord Bot (used to interact with Discord API)
 - `informations`:
-    - `packs` If you want to view packs download progression in your console
-    - `stickers` If you want to view stickers download progression in your console
+    - `packs` If you want to add the `data.json` file which contains some data of the pack
+    - `stickers` If you want to add the `data.json` file which contains some data of the sticker
 
 ## Contributions, questions and problems
 If you have any questions or problems, you can do an issue.
