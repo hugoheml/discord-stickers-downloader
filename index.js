@@ -41,7 +41,12 @@ function FetchStickersPacks() {
 
 function DownloadStickers() {
     FetchStickersPacks().then( async (packs) => {
+
+        let i = 0;
         for await (const pack of packs) {
+            i++;
+            console.log(`Starting download of ${pack.name} (${i}/${packs.length})`);
+
             // Create pack folder
             const formatedPackName = pack.name.replace(/[^a-zA-Z0-9 ]/g, "").replace(/ /g, "-").toLowerCase();
             mkdirSync(`${outputFolder}/${formatedPackName}`, { recursive: true });
@@ -57,9 +62,9 @@ function DownloadStickers() {
                 }, null, 4));
             }
 
-            let i = 0;
+            let k = 0;
             for await (const sticker of pack.stickers) {
-                i++;
+                k++;
 
                 const mediaExtension = STICKERS_FORMAT_EXTENSIONS[sticker.format_type];
                 if (!mediaExtension) {
@@ -106,7 +111,7 @@ function DownloadStickers() {
                             quiet: true
                         })
 
-                        console.log(`${i}/${pack.stickers.length} Downloaded ${sticker.name}!`)
+                        console.log(`Downloaded ${sticker.name} (${i}/${pack.stickers.length})`)
                     }
 
                     await Wait();
@@ -122,13 +127,14 @@ function DownloadStickers() {
                         const buffer = await res.buffer()
                         writeFileSync(`${outputFolder}/${formatedPackName}/${formatedStickerName}/sticker.${mediaExtension}`, buffer);
 
-                        console.log(`${i}/${pack.stickers.length} Downloaded ${sticker.name}!`)
+                        console.log(`Downloaded ${sticker.name} (${i}/${pack.stickers.length})`)
                     }
 
                     await Wait();
                 }
             }
         }
+        console.log(`All stickers packs downloaded!`)
     })
 }
 DownloadStickers();
