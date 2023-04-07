@@ -4,6 +4,7 @@ This is a small project, which allows you to **download all the Discord nitro st
 ## Warning
 I am aware that **it takes a long time to download**, but as Discord uses specific formats, I need to convert them to download them as a gif.
 
+
 Feel free to [contribute](#contributions-questions-and-problems) if you have any ideas for optimization!
 
 ## Requirements
