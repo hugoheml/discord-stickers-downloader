@@ -7,8 +7,7 @@ const renderLottie = require('puppeteer-lottie');
 const { outputFolder, botToken, informations } = require('./config.json');
 
 // Require constants
-const { DISCORD_API_BASE_URL, ENDPOINTS, INFORMATIONS_FILE_NAME, STICKERS_FORMAT_EXTENSIONS, LOTTIE_STICKER_FORMAT_TYPE, WAIT_TIME, LOTTIE_STICKER_DATA_URL } = require('./constants.js');
-const { STICKER_DOWNLOAD_URL }=require('./constants.js');
+const { DISCORD_API_BASE_URL, ENDPOINTS, INFORMATIONS_FILE_NAME, STICKERS_FORMAT_EXTENSIONS, LOTTIE_STICKER_FORMAT_TYPE, WAIT_TIME, LOTTIE_STICKER_DATA_URL, STICKER_DOWNLOAD_URL } = require('./constants.js');
 
 function Wait() {
     return new Promise( (resolve) => {
@@ -127,7 +126,7 @@ function DownloadStickers() {
                         const buffer = await res.buffer()
                         writeFileSync(`${outputFolder}/${formatedPackName}/${formatedStickerName}/sticker.${mediaExtension}`, buffer);
 
-                        console.log(`Downloaded ${sticker.name} (${i}/${pack.stickers.length})`)
+                        console.log(`Downloaded ${sticker.name} (${k}/${pack.stickers.length})`)
                     }
 
                     await Wait();
